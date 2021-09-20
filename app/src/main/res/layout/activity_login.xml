@@ -7,13 +7,9 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </RelativeLayout>
 
     <LinearLayout
+        android:id="@+id/linear_top"
         android:layout_width="match_parent"
         android:layout_height="125dp"
         android:background="@color/main_red"
@@ -38,32 +34,14 @@
             android:layout_weight="2"
             android:layout_gravity="center"
             android:src="@drawable/kcal" />
-
-
     </LinearLayout>
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:background="@drawable/ic_wave_top"
-        android:layout_marginTop="125dp"/>
+        android:layout_below="@id/linear_top"/>
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="@drawable/ic_wave_botton"
-        android:layout_alignParentBottom="true"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Desenvolvido por Fernanda"
-        android:layout_alignParentBottom="true"
-        android:gravity="center"
-        android:fontFamily="sans-serif-black"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        android:layout_marginBottom="5dp"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -176,6 +154,23 @@
         android:layout_marginTop="10dp"
         android:text="Criar uma conta agora"
         android:textColor="@color/blue"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_wave_botton"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desenvolvido por Fernanda"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_marginBottom="5dp"/>
 
 
 
