@@ -5,8 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileDoisActivity"
-    android:padding="10dp">
+    tools:context=".DashBoardActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +19,6 @@
             android:orientation="vertical"
             android:gravity="center"
             android:background="@drawable/activity_background_profile"
-
             android:padding="10dp">
 
             <androidx.cardview.widget.CardView
@@ -159,7 +157,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:layout_width="dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:gravity="center"
@@ -187,13 +185,17 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="350dp">
+            android:layout_height="350dp"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="75dp"
                 app:cardCornerRadius="10dp"
-                android:layout_marginTop="100dp">
+                android:layout_marginBottom="8dp">
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
@@ -211,12 +213,69 @@
                         android:layout_toRightOf="@id/iv__balanca"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                        android:orientation="vertical"
+                        android:layout_alignTop="@id/iv__balanca"
+                        android:layout_alignBottom="@id/iv__balanca"
+                        android:gravity="center_vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="dsads"/>
+                            android:text="Pesar Agora"
+                            android:textSize="20sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Acompanhe o seu peso"
+                            android:textSize="16sp"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="8dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_historico"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/weight"
+                        android:scaleType="centerCrop"
+                        android:padding="10dp"/>
+
+                    <LinearLayout
+                        android:layout_toRightOf="@id/iv_historico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_alignTop="@id/iv_historico"
+                        android:layout_alignBottom="@id/iv_historico"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ver histórico"
+                            android:textSize="20sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reveja suas conquistas"
+                            android:textSize="16sp"/>
 
                     </LinearLayout>
 
