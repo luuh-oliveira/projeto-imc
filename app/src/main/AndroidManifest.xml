@@ -9,10 +9,10 @@
         android:roundIcon="@drawable/kcal"
         android:supportsRtl="true"
         android:theme="@style/Theme.Imc">
-        <activity android:name=".DashBoardActivity"></activity>
-        <activity android:name=".NovoUsuarioActivity" />
+        <activity android:name=".ui.DashBoardActivity"></activity>
+        <activity android:name=".ui.NovoUsuarioActivity" />
         <activity android:name=".ProfileActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".ui.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
