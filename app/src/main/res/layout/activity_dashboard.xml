@@ -28,14 +28,16 @@
                 app:cardCornerRadius="60dp">
 
                 <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/foto_perfil"
-                        android:scaleType="centerCrop"/>
+                    android:id="@+id/iv_dashboard_foto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/perfil"
+                    android:scaleType="centerCrop"/>
 
             </androidx.cardview.widget.CardView>
 
             <TextView
+                android:id="@+id/tv_nome"
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -45,6 +47,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/tv_profissao"
                 android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -68,6 +71,7 @@
                     android:layout_weight="1">
 
                     <TextView
+                        android:id="@+id/tv_imc"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="25.7"
@@ -116,6 +120,7 @@
                     android:layout_weight="1">
 
                     <TextView
+                        android:id="@+id/tv_dash_idade"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="49"
@@ -140,6 +145,7 @@
                     android:layout_weight="1">
 
                     <TextView
+                        android:id="@+id/tv_peso"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="67"
@@ -164,6 +170,7 @@
                     android:layout_weight="1">
 
                     <TextView
+                        android:id="@+id/tv_altura"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="1.57"

@@ -14,3 +14,11 @@ fun convertStringToLocalDate(brazilDate: String) : LocalDate {
     return localDateFormat
 
 }
+
+fun calcularIdade (dataNascimento: LocalDate){
+
+    val dataAtual = LocalDate.now()
+
+
+
+}

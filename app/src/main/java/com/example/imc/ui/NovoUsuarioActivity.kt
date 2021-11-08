@@ -11,6 +11,7 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.*
+import androidx.core.graphics.drawable.toBitmap
 import com.example.imc.R
 import com.example.imc.model.Usuario
 import com.example.imc.utils.convertBitmapToBase64
@@ -32,7 +33,7 @@ class NovoUsuarioActivity : AppCompatActivity() {
     lateinit var radioM: RadioButton
     lateinit var tvTrocarFoto: TextView
     lateinit var ivFotoPerfil: ImageView
-    var imageBitmap: Bitmap? = null
+    lateinit var imageBitmap: Bitmap
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -49,6 +50,11 @@ class NovoUsuarioActivity : AppCompatActivity() {
         tvTrocarFoto = findViewById(R.id.tv_trocar_foto)
         ivFotoPerfil = findViewById(R.id.iv_foto_perfil)
 
+        //carregar bitmap padrão caso o usuário não escolha uma foto
+        //em caso de foto:
+        imageBitmap = BitmapFactory.decodeResource(resources, R.drawable.perfil)
+        //em caso de vector asset
+//        imageBitmap = resources.getDrawable(R.drawable.person_24).toBitmap()
 
         supportActionBar!!.title = "Novo usuário"
 
