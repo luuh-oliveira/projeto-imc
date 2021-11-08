@@ -42,8 +42,8 @@ class DashBoardActivity : AppCompatActivity() {
         tvProfissao.text = arquivo.getString("profissao", "")
         tvAltura.text = arquivo.getFloat("altura", 0.0f).toString()
 
-
-//        convertBase64ToBitmap(arquivo.getString("fotoPerfil", ""))
+        val bitmap = convertBase64ToBitmap(arquivo.getString("fotoPerfil", "")!!)
+        ivFotoPerfil.setImageBitmap(bitmap)
 
     }
 }

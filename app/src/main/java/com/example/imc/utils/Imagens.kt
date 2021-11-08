@@ -22,7 +22,7 @@ fun convertBitmapToBase64(bitmap: Bitmap) : String {
 
 }
 
-fun convertBase64ToBitmap(base64Image: String?) : Bitmap{
+fun convertBase64ToBitmap(base64Image: String) : Bitmap{
 
     //converter o base64 em bytes
     val imageBytes = Base64.decode(base64Image, Base64.DEFAULT)
