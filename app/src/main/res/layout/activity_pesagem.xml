@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PesagemActivity"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:id="@+id/peso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:src="@drawable/pesagem"-->
+<!--            />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acompanhe seu peso"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/purple_500"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mantenha seu peso atualizado, assim você poderá acompanhar sua evolução"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Dados da pesagem"
+            android:textColor="@color/main_red"
+            android:textSize="17sp"
+            android:drawableStart="@drawable/pesagem_24"
+            android:drawableTint="@color/main_red"
+            android:drawablePadding="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data de pesagem:"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/et_data"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Novo peso:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/button_salvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="SALVAR"
+            android:layout_marginTop="20dp"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

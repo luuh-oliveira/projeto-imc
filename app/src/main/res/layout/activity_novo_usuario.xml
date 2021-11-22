@@ -56,7 +56,8 @@
                 android:text="Dados para autenticação"
                 android:fontFamily="@font/montserrat"
                 android:textSize="20sp"
-                android:drawableStart="@drawable/ic_baseline_lock_24"/>
+                android:drawableStart="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="15dp"/>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/til_email"
@@ -96,6 +97,8 @@
                 android:fontFamily="@font/montserrat"
                 android:textSize="20sp"
                 android:drawableStart="@drawable/person_24"
+                android:drawableTint="@color/main_red"
+                android:drawablePadding="15dp"
                 android:layout_marginTop="16dp"/>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -164,7 +167,6 @@
                 android:layout_height="wrap_content"
                 android:text="Sexo"
                 android:textSize="17sp"
-                android:fontFamily="sans-serif-black"
                 android:layout_marginTop="15dp"
                 android:letterSpacing="0.05"/>
 

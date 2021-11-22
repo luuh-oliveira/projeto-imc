@@ -185,7 +185,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Desenvolvido por Fernanda"
+        android:text="Desenvolvido por DS2M-B"
         android:layout_alignParentBottom="true"
         android:gravity="center"
         android:fontFamily="sans-serif-black"
