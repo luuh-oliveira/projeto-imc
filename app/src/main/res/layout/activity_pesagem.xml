@@ -6,8 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.PesagemActivity"
+    android:orientation="vertical"
     android:gravity="center"
     >
+
+
 
     <LinearLayout
         android:id="@+id/peso"
@@ -17,11 +20,22 @@
         android:orientation="vertical"
         android:padding="32dp">
 
-<!--        <ImageView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="200dp"-->
-<!--            android:src="@drawable/pesagem"-->
-<!--            />-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:cardBackgroundColor="@color/main_red"
+            app:cardCornerRadius="20dp"
+            android:layout_gravity="end"
+            android:layout_marginBottom="60dp">
+
+            <ImageView
+                android:id="@+id/iv_pesagem_foto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/perfil"
+                android:scaleType="centerCrop"/>
+
+        </androidx.cardview.widget.CardView>
 
         <TextView
             android:layout_width="match_parent"
@@ -35,6 +49,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:drawableStart="@drawable/info_24"
+            android:drawableTint="@color/main_red"
+            android:drawablePadding="13dp"
             android:text="Mantenha seu peso atualizado, assim você poderá acompanhar sua evolução"/>
 
         <TextView
@@ -60,7 +77,23 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="7dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nível de atividade:"
             android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_niveis"
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/niveis"
             />
 
         <TextView
@@ -71,9 +104,10 @@
             android:textSize="20sp" />
 
         <EditText
-            android:layout_width="300dp"
+            android:id="@+id/et_novo_peso"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="numberDecimal" />
+            android:inputType="number" />
 
         <Button
             android:id="@+id/button_salvar"

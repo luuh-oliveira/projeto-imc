@@ -10,6 +10,9 @@
 
     <color name="main_red">#e30613</color>
 
+    <color name="light_red">#ADE30613</color>
+
+
     <color name="blue">#0099C2</color>
 
     <color name="blue_dark">#334E7B</color>
