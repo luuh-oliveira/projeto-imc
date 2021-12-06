@@ -248,6 +248,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/cv_historico"
                 android:layout_width="match_parent"
                 android:layout_height="75dp"
                 app:cardCornerRadius="10dp"
